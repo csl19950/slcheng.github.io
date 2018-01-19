@@ -104,23 +104,23 @@
 <meta property="og:site_name" content="Sholto&#39;s Blog">
 <meta property="og:description" content="MySQL的limit用法limit子句用于强制select语句返回的指定记录数。可以接受1到2个数字参数，参数必须是一个整数常量。 例子的数据库如下：  一、限制位置和显示条数（2个数字参数）limit 起始位置(0开始算),显示条数; 例子:SELECT * FROM dd limit 1,5 ;  ​    偏移起始位置是1,由于是从0开始算起的所以真正的起始位置是2,后面的5代表显示5条记">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/1.jpg">
-<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/2.jpg">
-<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/3.jpg">
-<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/4.jpg">
-<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/5.jpg">
-<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/6.jpg">
-<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/7.jpg">
-<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/8.jpg">
-<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/9.jpg">
-<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/10.jpg">
-<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/11.jpg">
-<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/12.jpg">
-<meta property="og:updated_time" content="2018-01-18T10:54:44.862Z">
+<meta property="og:image" content="https://github.com/2018/01/18/MySQL的limit/1.jpg">
+<meta property="og:image" content="https://github.com/2018/01/18/MySQL的limit/2.jpg">
+<meta property="og:image" content="https://github.com/2018/01/18/MySQL的limit/3.jpg">
+<meta property="og:image" content="https://github.com/2018/01/18/MySQL的limit/4.jpg">
+<meta property="og:image" content="https://github.com/2018/01/18/MySQL的limit/5.jpg">
+<meta property="og:image" content="https://github.com/2018/01/18/MySQL的limit/6.jpg">
+<meta property="og:image" content="https://github.com/2018/01/18/MySQL的limit/7.jpg">
+<meta property="og:image" content="https://github.com/2018/01/18/MySQL的limit/8.jpg">
+<meta property="og:image" content="https://github.com/2018/01/18/MySQL的limit/9.jpg">
+<meta property="og:image" content="https://github.com/2018/01/18/MySQL的limit/10.jpg">
+<meta property="og:image" content="https://github.com/2018/01/18/MySQL的limit/11.jpg">
+<meta property="og:image" content="https://github.com/2018/01/18/MySQL的limit/12.jpg">
+<meta property="og:updated_time" content="2018-01-19T08:10:45.511Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL的limit">
 <meta name="twitter:description" content="MySQL的limit用法limit子句用于强制select语句返回的指定记录数。可以接受1到2个数字参数，参数必须是一个整数常量。 例子的数据库如下：  一、限制位置和显示条数（2个数字参数）limit 起始位置(0开始算),显示条数; 例子:SELECT * FROM dd limit 1,5 ;  ​    偏移起始位置是1,由于是从0开始算起的所以真正的起始位置是2,后面的5代表显示5条记">
-<meta name="twitter:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/1.jpg">
+<meta name="twitter:image" content="https://github.com/2018/01/18/MySQL的limit/1.jpg">
 
 
 
@@ -426,41 +426,41 @@
       
         <h1 id="MySQL的limit用法"><a href="#MySQL的limit用法" class="headerlink" title="MySQL的limit用法"></a>MySQL的limit用法</h1><p>limit子句用于强制select语句返回的指定记录数。可以接受1到2个数字参数，参数必须是一个整数常量。</p>
 <p>例子的数据库如下：</p>
-<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\1.jpg" alt="Alt text"></p>
+<img src="/2018/01/18/MySQL的limit/1.jpg">
 <h2 id="一、限制位置和显示条数（2个数字参数）"><a href="#一、限制位置和显示条数（2个数字参数）" class="headerlink" title="一、限制位置和显示条数（2个数字参数）"></a>一、限制位置和显示条数（2个数字参数）</h2><p>limit 起始位置(0开始算),显示条数;</p>
 <p>例子:SELECT * FROM <code>dd</code> limit 1,5 ;</p>
-<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\2.jpg" alt="Alt text"></p>
+<img src="/2018/01/18/MySQL的limit/2.jpg">
 <p>​    偏移起始位置是1,由于是从0开始算起的所以真正的起始位置是2,后面的5代表显示5条记录。即显示2，3，4，5，6条记录</p>
 <p>​    即limit字句：SELECT * FROM table limit n,m ;</p>
 <p>​    实际显示的是n+1到n+m及其之间的数据记录</p>
 <h2 id="二、限制显示条数（1个数字参数）"><a href="#二、限制显示条数（1个数字参数）" class="headerlink" title="二、限制显示条数（1个数字参数）"></a>二、限制显示条数（1个数字参数）</h2><p>limit  显示条数；</p>
 <p>例子：SELECT * FROM ‘dd’ limit 5;</p>
-<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\3.jpg" alt="Alt text"></p>
-<p>​                            <img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\4.jpg" alt="Alt text"></p>
+<img src="/2018/01/18/MySQL的limit/3.jpg">
+<img src="/2018/01/18/MySQL的limit/4.jpg">
 <p>​    显示前5条select的结果集</p>
 <p>​    即limit字句：SELECT * FROM table limit n;</p>
 <p>​    实际上等价于：SELECT * FROM table limit 0,n;</p>
 <h2 id="三、特殊技巧（从某个位置显示到select的结果集的末尾）"><a href="#三、特殊技巧（从某个位置显示到select的结果集的末尾）" class="headerlink" title="三、特殊技巧（从某个位置显示到select的结果集的末尾）"></a>三、特殊技巧（从某个位置显示到select的结果集的末尾）</h2><p>​    limit子句包含两个数字参数，第二个参数为-1，代表显示到最后一个结果</p>
 <p>①查询最后一条记录：  SELECT * FROM table order by PK desc limit 1;</p>
 <p>例：按id排序，查询最后一条记录</p>
-<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\5.jpg" alt="Alt text"></p>
+<img src="/2018/01/18/MySQL的limit/5.jpg">
 <p>②查询第N条记录：SELECT * FROM table limit n-1,1;</p>
 <p>例：查询第4条记录：</p>
-<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\6.jpg" alt="Alt text"></p>
+<img src="/2018/01/18/MySQL的limit/6.jpg">
 <p>③查询倒数第N条记录：SELECT * FROM table order by PK desc limit n-1,1;</p>
 <p>例：查询倒数第4条记录：</p>
-<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\7.jpg" alt="Alt text"></p>
+<img src="/2018/01/18/MySQL的limit/7.jpg">
 <p>④随机获取N条记录：SELECT * FROM table order by Rand()  limit n;</p>
 <p>例：随机获取5条记录：</p>
-<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\8.jpg" alt="Alt text"></p>
+<img src="/2018/01/18/MySQL的limit/8.jpg">
 <p>⑤x表示每页显示的记录条数，y表示页码</p>
 <p>实现分页功能，返回第y页，每页条数为x（即显示第y页的记录）：SELECT <em> FROM table limit (y-1)</em>x,x;</p>
 <p>注释：第y页前面有y-1页记录，即前面总共有(y-1)*x条记录。</p>
 <p>例：返回第3页，每页显示2条记录</p>
-<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\9.jpg" alt="Alt text"></p>
+<img src="/2018/01/18/MySQL的limit/9.jpg">
 <p>⑤很多博客上有介绍limit子句的第二个参数如果设为-1可以查询到结束，但是我的MySQL版本不支持此种用法，所以持保留观点，可以使用特殊技巧③。(我的MySQL版本为5.6.38)</p>
-<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\10.jpg" alt="Alt text"></p>
-<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\11.jpg" alt="Alt text"></p>
+<img src="/2018/01/18/MySQL的limit/10.jpg">
+<img src="/2018/01/18/MySQL的limit/11.jpg">
 <h2 id="四、limit和offset连用-limit后接读取条数，offset后接偏移量"><a href="#四、limit和offset连用-limit后接读取条数，offset后接偏移量" class="headerlink" title="四、limit和offset连用(limit后接读取条数，offset后接偏移量)"></a>四、limit和offset连用(limit后接读取条数，offset后接偏移量)</h2><p>select * from table limit 2 offset 1;</p>
 <p>从偏移量为1开始读取两条数据，即读取2，3两条数据</p>
 <p>select * from table limit 2,1;</p>
@@ -469,7 +469,7 @@
 <p>①select * from table limit n-1,m;</p>
 <p>②select * from table limit m offset n-1;</p>
 <p>即：将limit后接的两个参数互换再在参数之间加上offset所得到的limit offset子句所实现的功能等于最初的limit；反正，若将limit offset子句之间的两个参数互换位置，并删掉offset关键字，所得到的limit子句所实现的功能和最初的limit offset子句相同</p>
-<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\12.jpg" alt="Alt text"></p>
+<img src="/2018/01/18/MySQL的limit/12.jpg">
 <h2 id="五、limit子句优化相关"><a href="#五、limit子句优化相关" class="headerlink" title="五、limit子句优化相关"></a>五、limit子句优化相关</h2><p>在offset(偏移量)较小时，花费时间较少，可以直接使用limit</p>
 <p>在offset较大时，直接使用limit所花费的时间较多，需要进行优化</p>
 <p>在select时使用索引能有效提高效率，如果只查找索引列，直接使用查询语句即可</p>
