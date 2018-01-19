@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="MySQL," />
 
 
 
@@ -96,16 +96,31 @@
 
 
 
-<meta name="description" content="My first web blog for a C++ programmer">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sholto&#39;s Blog">
-<meta property="og:url" content="https://github.com/csl19950/slcheng.github.io/index.html">
+<meta name="description" content="MySQL的limit用法limit子句用于强制select语句返回的指定记录数。可以接受1到2个数字参数，参数必须是一个整数常量。 例子的数据库如下：  一、限制位置和显示条数（2个数字参数）limit 起始位置(0开始算),显示条数; 例子:SELECT * FROM dd limit 1,5 ;  ​    偏移起始位置是1,由于是从0开始算起的所以真正的起始位置是2,后面的5代表显示5条记">
+<meta name="keywords" content="MySQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL的limit">
+<meta property="og:url" content="https://github.com/csl19950/slcheng.github.io/2018/01/18/MySQL的limit/index.html">
 <meta property="og:site_name" content="Sholto&#39;s Blog">
-<meta property="og:description" content="My first web blog for a C++ programmer">
+<meta property="og:description" content="MySQL的limit用法limit子句用于强制select语句返回的指定记录数。可以接受1到2个数字参数，参数必须是一个整数常量。 例子的数据库如下：  一、限制位置和显示条数（2个数字参数）limit 起始位置(0开始算),显示条数; 例子:SELECT * FROM dd limit 1,5 ;  ​    偏移起始位置是1,由于是从0开始算起的所以真正的起始位置是2,后面的5代表显示5条记">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/1.jpg">
+<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/2.jpg">
+<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/3.jpg">
+<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/4.jpg">
+<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/5.jpg">
+<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/6.jpg">
+<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/7.jpg">
+<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/8.jpg">
+<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/9.jpg">
+<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/10.jpg">
+<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/11.jpg">
+<meta property="og:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/12.jpg">
+<meta property="og:updated_time" content="2018-01-18T10:54:44.862Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sholto&#39;s Blog">
-<meta name="twitter:description" content="My first web blog for a C++ programmer">
+<meta name="twitter:title" content="MySQL的limit">
+<meta name="twitter:description" content="MySQL的limit用法limit子句用于强制select语句返回的指定记录数。可以接受1到2个数字参数，参数必须是一个整数常量。 例子的数据库如下：  一、限制位置和显示条数（2个数字参数）limit 起始位置(0开始算),显示条数; 例子:SELECT * FROM dd limit 1,5 ;  ​    偏移起始位置是1,由于是从0开始算起的所以真正的起始位置是2,后面的5代表显示5条记">
+<meta name="twitter:image" content="c:/Users/slcheng/.ssh/slcheng/source/images/mysql/1.jpg">
 
 
 
@@ -134,13 +149,13 @@
 
 
 
-  <link rel="canonical" href="https://github.com/csl19950/slcheng.github.io/"/>
+  <link rel="canonical" href="https://github.com/csl19950/slcheng.github.io/2018/01/18/MySQL的limit/"/>
 
 
 
 
 
-  <title>Sholto's Blog</title>
+  <title>MySQL的limit | Sholto's Blog</title>
   
 
 
@@ -165,9 +180,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -308,156 +321,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/csl19950/slcheng.github.io/2018/01/18/软件开发模式/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sholto">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sholto's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/18/软件开发模式/" itemprop="url">软件开发模式</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-18T19:01:59+08:00">
-                2018-01-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/01/18/软件开发模式/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/01/18/软件开发模式/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/01/18/软件开发模式/" class="leancloud_visitors" data-flag-title="软件开发模式">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          软件开发模式CNCC的开发流程：​    人行支付司汇集参与者（银行）的需求，然后通过与清算中心、计管部讨论以及征求参与者的意见，统一出需求（需求）。然后开发中心和支付司对需求进行设计修改，最终定型（设计）。然后开发中心负责软件的开发（制造）。待开发完成后，开发人员进行单元和组装测试；通过之后交予测
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/18/软件开发模式/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -487,9 +353,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/18/MySQL的limit/" itemprop="url">MySQL的limit</a></h1>
+          <h1 class="post-title" itemprop="name headline">MySQL的limit</h1>
         
 
         <div class="post-meta">
@@ -560,22 +424,77 @@
       
 
       
-        
-          
-          MySQL的limit用法limit子句用于强制select语句返回的指定记录数。可以接受1到2个数字参数，参数必须是一个整数常量。
-例子的数据库如下：
+        <h1 id="MySQL的limit用法"><a href="#MySQL的limit用法" class="headerlink" title="MySQL的limit用法"></a>MySQL的limit用法</h1><p>limit子句用于强制select语句返回的指定记录数。可以接受1到2个数字参数，参数必须是一个整数常量。</p>
+<p>例子的数据库如下：</p>
+<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\1.jpg" alt="Alt text"></p>
+<h2 id="一、限制位置和显示条数（2个数字参数）"><a href="#一、限制位置和显示条数（2个数字参数）" class="headerlink" title="一、限制位置和显示条数（2个数字参数）"></a>一、限制位置和显示条数（2个数字参数）</h2><p>limit 起始位置(0开始算),显示条数;</p>
+<p>例子:SELECT * FROM <code>dd</code> limit 1,5 ;</p>
+<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\2.jpg" alt="Alt text"></p>
+<p>​    偏移起始位置是1,由于是从0开始算起的所以真正的起始位置是2,后面的5代表显示5条记录。即显示2，3，4，5，6条记录</p>
+<p>​    即limit字句：SELECT * FROM table limit n,m ;</p>
+<p>​    实际显示的是n+1到n+m及其之间的数据记录</p>
+<h2 id="二、限制显示条数（1个数字参数）"><a href="#二、限制显示条数（1个数字参数）" class="headerlink" title="二、限制显示条数（1个数字参数）"></a>二、限制显示条数（1个数字参数）</h2><p>limit  显示条数；</p>
+<p>例子：SELECT * FROM ‘dd’ limit 5;</p>
+<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\3.jpg" alt="Alt text"></p>
+<p>​                            <img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\4.jpg" alt="Alt text"></p>
+<p>​    显示前5条select的结果集</p>
+<p>​    即limit字句：SELECT * FROM table limit n;</p>
+<p>​    实际上等价于：SELECT * FROM table limit 0,n;</p>
+<h2 id="三、特殊技巧（从某个位置显示到select的结果集的末尾）"><a href="#三、特殊技巧（从某个位置显示到select的结果集的末尾）" class="headerlink" title="三、特殊技巧（从某个位置显示到select的结果集的末尾）"></a>三、特殊技巧（从某个位置显示到select的结果集的末尾）</h2><p>​    limit子句包含两个数字参数，第二个参数为-1，代表显示到最后一个结果</p>
+<p>①查询最后一条记录：  SELECT * FROM table order by PK desc limit 1;</p>
+<p>例：按id排序，查询最后一条记录</p>
+<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\5.jpg" alt="Alt text"></p>
+<p>②查询第N条记录：SELECT * FROM table limit n-1,1;</p>
+<p>例：查询第4条记录：</p>
+<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\6.jpg" alt="Alt text"></p>
+<p>③查询倒数第N条记录：SELECT * FROM table order by PK desc limit n-1,1;</p>
+<p>例：查询倒数第4条记录：</p>
+<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\7.jpg" alt="Alt text"></p>
+<p>④随机获取N条记录：SELECT * FROM table order by Rand()  limit n;</p>
+<p>例：随机获取5条记录：</p>
+<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\8.jpg" alt="Alt text"></p>
+<p>⑤x表示每页显示的记录条数，y表示页码</p>
+<p>实现分页功能，返回第y页，每页条数为x（即显示第y页的记录）：SELECT <em> FROM table limit (y-1)</em>x,x;</p>
+<p>注释：第y页前面有y-1页记录，即前面总共有(y-1)*x条记录。</p>
+<p>例：返回第3页，每页显示2条记录</p>
+<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\9.jpg" alt="Alt text"></p>
+<p>⑤很多博客上有介绍limit子句的第二个参数如果设为-1可以查询到结束，但是我的MySQL版本不支持此种用法，所以持保留观点，可以使用特殊技巧③。(我的MySQL版本为5.6.38)</p>
+<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\10.jpg" alt="Alt text"></p>
+<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\11.jpg" alt="Alt text"></p>
+<h2 id="四、limit和offset连用-limit后接读取条数，offset后接偏移量"><a href="#四、limit和offset连用-limit后接读取条数，offset后接偏移量" class="headerlink" title="四、limit和offset连用(limit后接读取条数，offset后接偏移量)"></a>四、limit和offset连用(limit后接读取条数，offset后接偏移量)</h2><p>select * from table limit 2 offset 1;</p>
+<p>从偏移量为1开始读取两条数据，即读取2，3两条数据</p>
+<p>select * from table limit 2,1;</p>
+<p>从偏移量为2开始，读取一条数据，即读取第3条数据</p>
+<p>总结：如果需要从第n条(自然顺序，非偏移量顺序)开始读取m条数据</p>
+<p>①select * from table limit n-1,m;</p>
+<p>②select * from table limit m offset n-1;</p>
+<p>即：将limit后接的两个参数互换再在参数之间加上offset所得到的limit offset子句所实现的功能等于最初的limit；反正，若将limit offset子句之间的两个参数互换位置，并删掉offset关键字，所得到的limit子句所实现的功能和最初的limit offset子句相同</p>
+<p><img src="C:\Users\slcheng\.ssh\slcheng\source\images\mysql\12.jpg" alt="Alt text"></p>
+<h2 id="五、limit子句优化相关"><a href="#五、limit子句优化相关" class="headerlink" title="五、limit子句优化相关"></a>五、limit子句优化相关</h2><p>在offset(偏移量)较小时，花费时间较少，可以直接使用limit</p>
+<p>在offset较大时，直接使用limit所花费的时间较多，需要进行优化</p>
+<p>在select时使用索引能有效提高效率，如果只查找索引列，直接使用查询语句即可</p>
+<p>例：select id from dd limit 1000000,20;</p>
+<p>还可以采用自增主键进行优化：</p>
+<p>1.创建临时表(含自增主键)；2.插入查询结果到临时表；3.分多次查询临时表</p>
+<p>如果查找全部列，则可以使用索引&gt;=(即where)的形式或者利用join</p>
+<p>原语句：select * from dd limit 1000000,20;</p>
+<p>优化方法1：select * from dd where id&gt;(select id from dd limit 1000000,1) limit 20;(索引&gt;=)</p>
+<p>优化方法2：select * from dd a join(select id from dd limit 1000000,20) b on a.id=b.id;(join)</p>
+<h2 id="六、limit分页优化方法"><a href="#六、limit分页优化方法" class="headerlink" title="六、limit分页优化方法"></a>六、limit分页优化方法</h2><p>1.子查询优化法</p>
+<p>先找出第一条数据，然后大于等于这条数据的id就是要获取的数据</p>
+<pre><code>缺点：数据必须是连续的，可以说不能有where条件，where条件会筛选数据，导致数据失去连续性
+</code></pre><p>2.倒排表优化法(缺点明显，很少使用)</p>
+<p> 倒排表法类似建立索引，用一张表来维护页数，然后通过高效的连接得到数据</p>
+<pre><code>缺点：只适合数据数固定的情况，数据不能删除，维护页表困难
+</code></pre><p>3.反向查找优化法(很麻烦，基本不用)</p>
+<pre><code>当偏移超过一半记录数的时候，先用倒序排序，这样偏移就反转了(相当于只查一半的偏移量)
 
-一、限制位置和显示条数（2个数字参数）limit 起始位置(0开始算),显示条数;
-例子:SELECT * FROM dd limit 1,5 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/18/MySQL的limit/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+ 缺点：order by优化比较麻烦，要增加索引，索引影响数据的修改效率，并且要知道总记录数
+
+ ，偏移大于数据的一半
+</code></pre><p>4.limit限制优化法：把limit的偏移量限制低于某个数，超过这个数就没有数据</p>
+<p>5.只查询索引法：即只查询索引字段的方法</p>
+
       
     </div>
     
@@ -590,308 +509,40 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/csl19950/slcheng.github.io/2018/01/16/Welcome/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sholto">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sholto's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/16/Welcome/" itemprop="url">Welcome</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-16T11:06:07+08:00">
-                2018-01-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/MySQL/" rel="tag"># MySQL</a>
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/01/16/Welcome/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/01/16/Welcome/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/01/16/Welcome/" class="leancloud_visitors" data-flag-title="Welcome">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/16/Welcome/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/16/Welcome/" rel="next" title="Welcome">
+                <i class="fa fa-chevron-left"></i> Welcome
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/csl19950/slcheng.github.io/2018/01/16/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sholto">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sholto's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/16/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-16T10:51:59+08:00">
-                2018-01-16
-              </time>
+              <a href="/2018/01/18/软件开发模式/" rel="prev" title="软件开发模式">
+                软件开发模式 <i class="fa fa-chevron-right"></i>
+              </a>
             
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/01/16/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/01/16/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/01/16/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/16/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -901,10 +552,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -912,6 +564,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2018/01/18/MySQL的limit/"
+           data-title="MySQL的limit" data-url="https://github.com/csl19950/slcheng.github.io/2018/01/18/MySQL的limit/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -932,8 +592,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -993,6 +662,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MySQL的limit用法"><span class="nav-number">1.</span> <span class="nav-text">MySQL的limit用法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、限制位置和显示条数（2个数字参数）"><span class="nav-number">1.1.</span> <span class="nav-text">一、限制位置和显示条数（2个数字参数）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、限制显示条数（1个数字参数）"><span class="nav-number">1.2.</span> <span class="nav-text">二、限制显示条数（1个数字参数）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、特殊技巧（从某个位置显示到select的结果集的末尾）"><span class="nav-number">1.3.</span> <span class="nav-text">三、特殊技巧（从某个位置显示到select的结果集的末尾）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、limit和offset连用-limit后接读取条数，offset后接偏移量"><span class="nav-number">1.4.</span> <span class="nav-text">四、limit和offset连用(limit后接读取条数，offset后接偏移量)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、limit子句优化相关"><span class="nav-number">1.5.</span> <span class="nav-text">五、limit子句优化相关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、limit分页优化方法"><span class="nav-number">1.6.</span> <span class="nav-text">六、limit分页优化方法</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1106,10 +791,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
